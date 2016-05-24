@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Responsive Forms</title>
-  <link rel="stylesheet" type="text/css" href="./bower_components/normalize.css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Responsive Forms</title>
+    <link rel="stylesheet" type="text/css" href="./bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
-<body>
 
+<body>
+    <form>
+        <div class="column">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="name" id="first-name">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="name" id="last-name">
+            <label for="email-address">EMAIL ADDRESS</label>
+            <input type="text" name="email" id="email-address">
+            <label for="country">COUNTRY</label>
+            <select name="choose-country">
+                <option value="placeholder-text" disabled selected>
+                    Choose a country
+                </option>
+                <option value="france">
+                    France
+                </option>
+                <option value="italy">
+                    Italy
+                </option>
+                <option value="portugal">
+                    Portugal
+                </option>
+            </select>
+            <label for="biography">BIOGRAPHY</label>
+            <textarea name="biography-input" id="biography" placeholder="This is how I rock..." rows="6" cols="25"></textarea>
+        </div>
+        <div class="column">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="text" name="phone" id="phone-number" placeholder="+351 999 999">
+            <label for="affiliations">AFFILIATIONS</label>
+            <textarea name="affiliation" id="affiliations" rows="6" cols="25"></textarea>
+            <label for="occupation">OCCUPATION</label>
+            <select name="occupations" id="occupation">
+                <option value="placeholder-text" disabled selected>
+                    Choose an occupation
+                </option>
+                <option value="art-teacher">
+                    Art Teacher
+                </option>
+                <option value="web-developer">
+                    Web Developer
+                </option>
+                <option value="dog-walker">
+                    Dog Walker
+                </option>
+            </select>
+            <label for="cats-name">CAT'S NAME</label>
+            <input type="text" name="cat" id="cats-name" placeholder="Kitty">
+            <label for="favorite-gadget">FAVORITE GADEGET</label>
+            <input type="text" name="gadget" id="favorite-gadget" placeholder="Annoy-a-tron">
+        </div>
+        <div class="column">
+            <label for="type-of-talent">TYPE OF TALENT</label>
+            <select name="type-of-talent">
+                <option value="placeholer-text" disabled selected>
+                    Choose a talent
+                </option>
+                <option value="singing">
+                    Singing
+                </option>
+                <option value="art">
+                    Art
+                </option>
+                <option value="needle-point">
+                    Needle Point
+                </option>
+            </select>
+            <label for="favorite-drink">FAVORITE DRINK</label>
+            <input class="radio-button" type="radio" name="favorite-drink" value="Tea"> Tea
+            <input class="radio-button" type="radio" name="favorite-drink" value="Coffee"> Coffee
+            <input class="radio-button" type="radio" name="favorite-drink" value="Soda"> Soda
+            <label for="special-power">SPECIAL POWER</label>
+            <input type="text" name="powers" id="special-power" placeholder="Anti-gravity">
+            <label for="weapon-of-choice">WEAPON OF CHOICE</label>
+            <input type="text" name="choose-weapon" id="weapon-of-choice" placeholder="Lightsaber">
+            <label for="comments">COMMENTS</label>
+            <textarea name="comment-area" id="comments" rows="7" cols="25"></textarea>
+        </div>
+    </form>
+    <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
 </body>
+
 </html>

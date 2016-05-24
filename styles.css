@@ -1,0 +1,41 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #3498db;
+}
+label, textarea, input, select, option {
+  display: block;
+  background-color: #3498db;
+  color: white;
+}
+input, textarea {
+  border: 2px solid white;
+}
+input:focus, textarea:focus {
+  border: 2px solid rgb(38, 67, 111);
+}
+::-webkit-input-placeholder {
+  color: rgb(38, 67, 111);
+  font-style: italic;
+  font-weight: bold;
+}
+label {
+  margin-bottom: .5em;
+}
+select, input, textarea {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  padding: 2%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+}
+.radio-button {
+  display: inline;
+  margin: none;
+  width: auto;
+}
+.column {
+float:left;
+margin: 5%;
+}
